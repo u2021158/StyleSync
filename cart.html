@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart</title>
+ 
+  <link rel="stylesheet" href="cart.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+   <!-- Header Section -->
+   <header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>StyleSync</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shopping.html">Shop</a></li>
+                <li><a href="aicust.html">ai</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <div class="cart-container">
+    <!-- Left side - Cart details -->
+    <div class="cart-details">
+      <table class="cart-table">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Qty</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="product-info">
+              <img src="images/sandal.png" alt="Sandals" class="product-image">
+              <div class="product-text">
+                <span>Sandals</span>
+                <p>#1765370020001</p>
+                <p>Size: 39 - Color: White</p>
+              </div>
+            </td>
+            <td>$99.99</td>
+            <td class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </td>
+            <td>$99.99</td>
+          </tr>
+          <tr>
+            <td class="product-info">
+              <img src="images/purse.png" alt="Zebra Purse" class="product-image">
+              <div class="product-text">
+                <span>Zebra Purse</span>
+                <p>#5276900020001</p>
+                <p>Size: One Size - Color: Black Mix</p>
+              </div>
+            </td>
+            <td>$29.96</td>
+            <td class="qty">
+              <button>-</button>
+              <span>2</span>
+              <button>+</button>
+            </td>
+            <td>$59.92</td>
+          </tr>
+          <tr>
+            <td class="product-info">
+              <img src="images/knittop.png" alt="Knitted Top" class="product-image">
+              <div class="product-text">
+                <span>Knitted Top</span>
+                <p>#1765370020001</p>
+                <p>Size: S - Color: Powder Pink</p>
+              </div>
+            </td>
+            <td>$29.99</td>
+            <td class="qty">
+              <button>-</button>
+              <span>1</span>
+              <button>+</button>
+            </td>
+            <td>$29.99</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="add-note">
+        <label for="note">Add a note</label>
+        <input type="text" id="note" placeholder="Some words to In House team">
+      </div>
+    </div>
+
+    <!-- Right side - Cart summary -->
+    <div class="cart-summary">
+      <div class="summary-content">
+        <h3>Cart Total</h3>
+        <p>$189.90</p>
+        <small>Shipping & taxes calculated at checkout</small>
+        <div class="terms">
+          <input type="checkbox" id="terms">
+          <label for="terms">I agree to <span>Terms & Conditions</span></label>
+        </div>
+        <button class="checkout-button">Checkout</button>
+        <button class="paypal-button">PayPal</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

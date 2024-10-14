@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D T-Shirt Configurator</title>
+    <link rel="stylesheet" href="mockup.css">
+</head>
+<body>
+    <header class="top-bar">
+        <img src="images/logo.png" alt="Logo" class="logo">
+        <div class="top-buttons">
+            <button class="login-btn">Pro Plan Login</button>
+            <button class="upgrade-btn">Upgrade</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <button class="upload-btn">
+                <span class="icon">👜</span> Upload Your Design
+            </button>
+            <button class="export-btn">
+                <span class="icon">📤</span> Export
+            </button>
+
+            <div class="section">
+                <label>Garment Color</label>
+                <div class="color-palette">
+                    <div class="color-option" style="background-color: #ffffff;" data-color="#ffffff"></div>
+                    <div class="color-option" style="background-color: #000000;" data-color="#000000"></div>
+                    <div class="color-option" style="background-color: #ff0000;" data-color="#ff0000"></div>
+                    <div class="color-option" style="background-color: #00ff00;" data-color="#00ff00"></div>
+                    <div class="color-option" style="background-color: #0000ff;" data-color="#0000ff"></div>
+                    <div class="color-option" style="background-color: #ffff00;" data-color="#ffff00"></div>
+                </div>
+                <input type="color" id="colorPicker" name="colorPicker" value="#ffffff">
+            </div>
+
+            <div class="section">
+                <label>Background Color</label>
+                <div class="background-palette">
+                    <div class="color-option" style="background-color: #333333;" data-color="#333333"></div>
+                    <div class="color-option" style="background-color: #ffffff;" data-color="#ffffff"></div>
+                    <div class="color-option" style="background-color: #cccccc;" data-color="#cccccc"></div>
+                    <div class="color-option" style="background-color: #ffeb3b;" data-color="#ffeb3b"></div>
+                    <div class="color-option" style="background-color: #f44336;" data-color="#f44336"></div>
+                </div>
+                <input type="color" id="backgroundPicker" name="backgroundPicker" value="#333333">
+            </div>
+
+            <div class="section">
+                <label>Animation <span class="pro-badge">Pro</span></label>
+                <select disabled>
+                    <option>Select Animation</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <label>Camera Animation <span class="pro-badge">Pro</span></label>
+                <select disabled>
+                    <option>Select Camera Animation</option>
+                </select>
+            </div>
+        </aside>
+
+        <main class="main-view" id="mainView">
+            <div class="mockup-view">
+                <img src="images/whiteshirt.webp" alt="3D T-shirt mockup" class="mockup-image" id="tshirtMockup">
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

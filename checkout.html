@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout Page</title>
+
+  <link rel="stylesheet" href="address.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+
+</head>
+<body>
+   <!-- Header Section -->
+   <header>
+    <div class="header-container">
+        <div class="logo">
+            <h1>StyleSync</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shopping.html">Shop</a></li>
+                <li><a href="aicust.html">ai</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="#"><i class="fas fa-search"></i></a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+  <div class="checkout-container">
+    <!-- Left side - Shipping and Billing Details -->
+    <div class="checkout-details">
+      <h1>Checkout</h1>
+      <div class="progress-bar">
+        <div class="step active">1</div>
+        <div class="step">2</div>
+        <div class="step">3</div>
+      </div>
+      <h2>Ship To</h2>
+      <form action="#" method="POST" class="checkout-form">
+        <div class="form-group">
+          <label for="email">Email Address <span class="required">required</span></label>
+          <input type="email" id="email" name="email" placeholder="Email address" required>
+        </div>
+
+        <div class="form-group">
+          <label for="first-name">First Name <span class="required">required</span></label>
+          <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name <span class="required">required</span></label>
+          <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="address">Street Address <span class="required">required</span></label>
+          <input type="text" id="address" name="address" placeholder="Street Address" required>
+          <a href="#">Add apt, suite or other</a>
+        </div>
+
+        <div class="form-group">
+          <label for="postal-code">Postal Code <span class="required">required</span></label>
+          <input type="text" id="postal-code" name="postal-code" placeholder="Postal Code" required>
+        </div>
+
+        <div class="form-group">
+          <label for="city">Town/City <span class="required">required</span></label>
+          <input type="text" id="city" name="city" placeholder="Town/City" required>
+        </div>
+
+        <div class="form-group">
+          <label for="province">Province <span class="required">required</span></label>
+          <select id="province" name="province" required>
+            <option value="">Please Select</option>
+            <option value="province1">Province 1</option>
+            <option value="province2">Province 2</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number <span class="required">required</span></label>
+          <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="billing-address" name="billing-address">
+          <label for="billing-address">Use as billing address</label>
+        </div>
+
+        <h2>Payment Method</h2>
+        <div class="form-group">
+          <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+          <label for="credit-card">Credit Card</label><br>
+          
+          <input type="radio" id="paypal" name="payment-method" value="paypal">
+          <label for="paypal">PayPal</label><br>
+
+          <input type="radio" id="apple-pay" name="payment-method" value="apple-pay">
+          <label for="apple-pay">Apple Pay</label>
+        </div>
+
+        <button type="submit" class="submit-btn">Next</button>
+      </form>
+    </div>
+
+    <!-- Right side - Order Summary -->
+    <div class="order-summary">
+      <h2>Order Summary</h2>
+      <div class="summary-details">
+        <p>Merchandise: <span class="price">CAD 179.95</span></p>
+        <p>Shipping & Handling: <span class="price">CAD 19.95</span></p>
+        <p>Tax: <span class="price">CAD 25.98</span></p>
+        <hr>
+        <p class="total">Order Total: <span class="price">CAD 225.88</span></p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

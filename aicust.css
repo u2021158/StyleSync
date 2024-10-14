@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar .logo img {
+    width: 120px;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.navbar .request-mockup {
+    background-color: #ff5ca1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 40px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #333;
+    font-weight: 700;
+}
+
+.hero-content .highlight {
+    color: #ff5ca1; /* Pink highlight for 'Mockup' */
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: #666;
+}
+
+.hero-content .upload-design {
+    background-color: #ff5ca1;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-content .upload-design:hover {
+    background-color: #e94d95;
+}
+
+.hero-image img {
+    width: 450px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-hunt {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.product-hunt img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 20px 0;
+    color: #999;
+}
